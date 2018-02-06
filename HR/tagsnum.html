@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+      font-family: "Lato", sans-serif;
+      text-align : center;
+      }
+      @media (min-width : 250px){
+      body {
+      font-size : 15px;
+      }
+      img {
+       width: 100%;
+       height: 100%;
+      }
+      }
+      @media (min-width : 450px){
+      body {
+      font-size : 17px;
+      }
+      img {
+        width : 100%;
+        height : 100%;
+      }
+      }
+      @media (min-width: 700px){
+      .grid-container {
+      display : grid;
+      grid-template-rows : 1fr 1fr 3fr 4fr 1fr;
+      grid-template-columns : 1fr 4fr 2fr;
+      background-color: #e9e9e9;
+      grid-gap: 2px;
+      font-size : 20px;
+      }
+      img {
+        width : 100%;
+        height : 100%;
+      }
+      }
+      .a {
+      display : grid;
+      grid-area : 1/1/2/4;
+      grid-template-columns : 1fr 5fr 1fr 1fr;
+      grid-gap : 2px;
+      border-style: ridge;
+      }
+      .a1{
+      grid-area : 1/1/2/2;
+      background: lightblue;
+      }
+      .a2{
+      grid-area : 1/2/2/3;
+      background: lightblue;
+      }
+      .a3{
+       grid-area: 1/3/2/4;
+       background: lightblue;
+      }
+      .a4{
+       grid-area : 1/4/2/5;
+       background : lightblue;
+      }
+      .b {
+      grid-area: 2/1/5/2;
+      border-style: ridge;
+      background : lightblue;
+      }
+      .c {
+      grid-area : 2/2/3/3;
+      background : lightblue;
+      border-style : ridge;
+      }
+      .d {
+      display : grid;
+      grid-area : 2/3/5/4;
+      grid-template-rows : 1fr 1fr 1fr;
+      grid-gap : 2px;
+      border-style : ridge;
+      }
+      .d1 {
+      grid-area : 1/1/2/2;
+      background: lightblue;
+      }
+      .d2 {
+      grid-area: 2/1/3/2;
+      background: lightblue;
+      }
+      .d3 {
+      grid-area: 3/1/4/2;
+      background: lightblue;
+      }
+      .e {
+      display: grid;
+      grid-area : 3/2/4/3;
+      grid-template-rows : 1fr 1fr 1fr 1fr;
+      grid-templates-columns : 3fr 1fr;
+      grid-gap : 1px;
+      border-style : ridge;
+      }
+
+      .e1 {
+        grid-area : 1/1/2/2;
+        background : lightblue;
+      }
+      .e2 {
+        grid-area : 1/2/2/3;
+        background : lightblue;
+      }
+      .e3 {
+        grid-area :2/1/5/2;
+        background : lightblue;
+      }
+      .e4 {
+        grid-area : 2/2/3/3;
+        background : lightblue;
+      }
+
+      .e5 {
+        grid-area : 3/2/4/3;
+        background : lightblue;
+      }
+      .e6 {
+        grid-area : 4/2/5/3;
+        background : lightblue;
+      }
+      .i {
+        display : grid;
+        grid-area : 4/2/5/3;
+        grid-template-rows : 1fr 3fr 1fr;
+        grid-template-columns : 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+        background: lightblue;
+        border-style: ridge;
+        height : 200px;
+      }
+      .i1 {
+           grid-area : 1/1/2/8;
+           background : lightblue;
+      }
+      .i2 {
+           grid-area : 2/1/3/2;
+           background : lightblue;
+      }
+      .i3 {
+           display : grid;
+           grid-area : 2/2/3/3;
+           grid-template-rows : 1fr 1fr 2fr;
+           grid-gap : 2px;
+           border-style : ridge;
+           background : lightblue;
+
+      }
+      .i4 {
+           grid-area : 1/1/2/2;
+           background : lightblue;
+      }
+      .i5 {
+           grid-area : 2/1/3/2;
+           background : lightblue;
+      }
+      .i6 {
+           grid-area : 3/1/4/2;
+           background : lightblue;
+      }
+      .i7 {
+           grid-area : 2/3/3/4;
+           background : lightblue;
+      }
+      .i8 {
+           display : grid;
+           grid-area : 2/4/3/5;
+           grid-template-rows : 1fr 1fr 2fr;
+           grid-gap : 2px;
+           border-style : ridge;
+           background : lightblue;
+
+      }
+      .i9 {
+           grid-area : 1/1/2/2;
+           background : lightblue;
+      }
+      .i10 {
+           grid-area : 2/1/3/2;
+           background : lightblue;
+      }
+      .i11 {
+           grid-area : 3/1/4/2;
+           background : lightblue;
+      }
+      .i12 {
+           grid-area : 2/5/3/6;
+           background : lightblue;
+      }
+      .i13 {
+           display : grid;
+           grid-area : 2/6/3/7;
+           grid-template-rows: 1fr 1fr 2fr;
+           grid-gap : 2px;
+           border-style : ridge;
+           background : lightblue;
+
+      }
+      .i14 {
+           grid-area : 1/1/2/2;
+           background : lightblue;
+      }
+      .i15 {
+           grid-area : 2/1/3/2;
+           background : lightblue;
+      }
+      .i16 {
+           grid-area : 3/1/4/2;
+           background : lightblue;
+      }
+
+      .i17 {
+           grid-area : 2/7/3/8;
+           background : lightblue;
+      }
+      .i18 {
+           grid-area : 3/1/4/8;
+           background : lightblue;
+      }
+      .f {
+      grid-area : 5/1/6/4;
+      border-style : ridge;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="a">
+        <div class="a1">Logo</div>
+        <div class="a2">Pic</div>
+        <div class="a3">photo</div>
+        <div class="a4">Name</div>
+      </div>
+      <div class="b"></div>
+      <div class="c">Pins</div>
+      <div class="d">
+        <div class="d1">Graphs</div>
+        <div class="d2">Actions</div>
+        <div class="d3">Insights</div>
+      </div>
+      <div class="e">
+      <div class="e1">a</div>
+      <div class="e2">b</div>
+      <div class="e3">c
+      </div>
+      <div class="e4">d</div>
+      <div class="e5">e</div>
+      <div class="e6">f</div>
+      </div>
+      <div class="i">
+      <div class="i1"></div>
+      <div class="i2"></div>
+      <div class="i3">
+      <div class="i4">a</div>
+      <div class="i5">a</div>
+      <div class="i6">a</div>
+      </div>
+      <div class="i7"></div>
+      <div class="i8">
+      <div class="i9">a</div>
+      <div class="i10">a</div>
+      <div class="i11">a</div>
+      </div>
+      <div class="i12"></div>
+      <div class="i13">
+      <div class="i14">a</div>
+      <div class="i15">a</div>
+      <div class="i16">a</div>
+      </div>
+      <div class="i17"></div>
+      <div class="i18"></div>
+      </div>
+      <div class="f">All Rights</div>
+    </div>
+  </body>
+  <script>
+  </script>
+  </html>

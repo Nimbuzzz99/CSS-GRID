@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+      body {
+      font-family : 'Roboto' , san-serif;
+      text-align : center;
+      }
+      @media (min-width : 250px){
+      body {
+      font-size : 15px;
+      }
+      }
+      @media (min-width : 450px){
+      body {
+      font-size : 14px;
+      }
+      }
+      @media (min-width: 800px){
+      .grid-container {
+      display : grid;
+      grid-template-areas:
+      'header header header header header header header'
+      'menu section section section section aside aside'
+      'menu tables tables tables tables aside aside'
+      'menu tables tables tables tables aside aside'
+      'footer footer footer footer footer footer footer';
+      background-color: #e9e9e9;
+      grid-gap: 2px;
+      font-size : 20px;
+      }
+      }
+      table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: lightgray}
+
+th {
+    background-color: gray;
+    color: white;
+}
+      .a {
+      display : grid;
+      grid-area : header;
+      grid-template-areas:
+      'logo pic help photo name';
+      grid-gap : 2px;
+      border-style: ridge;
+      }
+      .a1{
+      grid-area : logo;
+      background: lightblue;
+      }
+      .a2{
+      grid-area : pic;
+      background: lightblue;
+      }
+      .a3{
+      grid-area : help;
+      background: lightblue;
+      }
+      .a4{
+      grid-area : photo;
+      background: lightblue;
+      }
+      .a5{
+      grid-area : name;
+      background: lightblue;
+      }
+      .b {
+      grid-area: menu;
+      border-style: ridge;
+      background : lightblue;
+      }
+      .c {
+      display : grid;
+      grid-area : section;
+      grid-template-areas:
+      'pins'
+      'heading1'
+      'heading2'
+      'heading3';
+      grid-gap : 2px;
+      border-style : ridge;
+      margin : 0;
+      }
+      .c1 {
+      grid-area : pins;
+      background: lightblue;
+      }
+      .c2 {
+      grid-area : heading1;
+      background: lightblue;
+      }
+      .c3 {
+      grid-area : heading2;
+      background: lightblue;
+      }
+      .c4 {
+      grid-area : heading3;
+      background: lightblue;
+      }
+      .d {
+      display : grid;
+      grid-area : aside;
+      grid-template-areas:
+      'graphs'
+      'actions'
+      'insights';
+      grid-gap : 2px;
+      border-style : ridge;
+      }
+      .d1 {
+      grid-area : graphs;
+      background: lightblue;
+      }
+      .d2 {
+      grid-area: actions;
+      background: lightblue;
+      }
+      .d3 {
+      grid-area: insights;
+      background: lightblue;
+      }
+      .e {
+      display: grid;
+      grid-area: tables;
+      grid-template-areas:
+      'table1'
+      'table2';
+      grid-gap : 10px;
+      }
+      .e1 {
+      grid-area: table1;
+      background: lightblue;
+      border-style : ridge;
+      }
+      .e2{
+      grid-area: table2;
+      background: lightblue;
+       border-style : ridge;
+      }
+      .f {
+      grid-area: footer;
+      border-style : ridge;
+      height : 50px
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="a">
+        <div class="a1">Logo</div>
+        <div class="a2">Pic</div>
+        <div class="a3">Help</div>
+        <div class="a4">photo</div>
+        <div class="a5">Name</div>
+      </div>
+      <div class="b">menu</div>
+      <div class="c">
+        <div class="c1">Pins</div>
+        <div class="c2">Heading1</div>
+        <div class="c3">Heading2</div>
+        <div class="c4">Heading3</div>
+      </div>
+      <div class="d">
+        <div class="d1">Graphs</div>
+        <div class="d2">Actions</div>
+        <div class="d3">Insights</div>
+      </div>
+      <div class="e">
+        <div class="e1">
+        <table>
+  <thead>
+    <tr>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+      <th>e</th>
+      <th>f</th>
+      <th>g</th>
+      <th>h</th>
+      <th>i</th>
+      <th>j</th>
+      <th>k</th>
+      <th>l</th>
+      <th>m</th>
+      <th>n</th>
+      <th>o</th>
+      <th>p</th>
+      <th>q</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-heading="a">a</td>
+      <td data-heading="b">b</td>
+      <td data-heading="c">c</td>
+      <td data-heading="d">d</td>
+      <td data-heading="e">e</td>
+      <td data-heading="f">f</td>
+      <td data-heading="g">g</td>
+      <td data-heading="h">h</td>
+      <td data-heading="i">i</td>
+      <td data-heading="j">j</td>
+      <td data-heading="k">k</td>
+      <td data-heading="l">l</td>
+      <td data-heading="m">m</td>
+      <td data-heading="n">n</td>
+      <td data-heading="o">o</td>
+      <td data-heading="p">p</td>
+      <td data-heading="q">q</td>
+    </tr>
+   <tr>
+      <td data-heading="a">a</td>
+      <td data-heading="b">b</td>
+      <td data-heading="c">c</td>
+      <td data-heading="d">d</td>
+      <td data-heading="e">e</td>
+      <td data-heading="f">f</td>
+      <td data-heading="g">g</td>
+      <td data-heading="h">h</td>
+      <td data-heading="i">i</td>
+      <td data-heading="j">j</td>
+      <td data-heading="k">k</td>
+      <td data-heading="l">l</td>
+      <td data-heading="m">m</td>
+      <td data-heading="n">n</td>
+      <td data-heading="o">o</td>
+      <td data-heading="p">p</td>
+      <td data-heading="q">q</td>
+    </tr>
+    <tr>
+      <td data-heading="a">a</td>
+      <td data-heading="b">b</td>
+      <td data-heading="c">c</td>
+      <td data-heading="d">d</td>
+      <td data-heading="e">e</td>
+      <td data-heading="f">f</td>
+      <td data-heading="g">g</td>
+      <td data-heading="h">h</td>
+      <td data-heading="i">i</td>
+      <td data-heading="j">j</td>
+      <td data-heading="k">k</td>
+      <td data-heading="l">l</td>
+      <td data-heading="m">m</td>
+      <td data-heading="n">n</td>
+      <td data-heading="o">o</td>
+      <td data-heading="p">p</td>
+      <td data-heading="q">q</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div class="e2">
+         <table>
+  <thead>
+    <tr>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+      <th>e</th>
+      <th>f</th>
+      <th>g</th>
+      <th>h</th>
+      <th>i</th>
+      <th>j</th>
+      <th>k</th>
+      <th>l</th>
+      <th>m</th>
+      <th>n</th>
+      <th>o</th>
+      <th>p</th>
+      <th>q</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-heading="a">a</td>
+      <td data-heading="b">b</td>
+      <td data-heading="c">c</td>
+      <td data-heading="d">d</td>
+      <td data-heading="e">e</td>
+      <td data-heading="f">f</td>
+      <td data-heading="g">g</td>
+      <td data-heading="h">h</td>
+      <td data-heading="i">i</td>
+      <td data-heading="j">j</td>
+      <td data-heading="k">k</td>
+      <td data-heading="l">l</td>
+      <td data-heading="m">m</td>
+      <td data-heading="n">n</td>
+      <td data-heading="o">o</td>
+      <td data-heading="p">p</td>
+      <td data-heading="q">q</td>
+    </tr>
+   <tr>
+      <td data-heading="a">a</td>
+      <td data-heading="b">b</td>
+      <td data-heading="c">c</td>
+      <td data-heading="d">d</td>
+      <td data-heading="e">e</td>
+      <td data-heading="f">f</td>
+      <td data-heading="g">g</td>
+      <td data-heading="h">h</td>
+      <td data-heading="i">i</td>
+      <td data-heading="j">j</td>
+      <td data-heading="k">k</td>
+      <td data-heading="l">l</td>
+      <td data-heading="m">m</td>
+      <td data-heading="n">n</td>
+      <td data-heading="o">o</td>
+      <td data-heading="p">p</td>
+      <td data-heading="q">q</td>
+    </tr>
+    <tr>
+      <td data-heading="a">a</td>
+      <td data-heading="b">b</td>
+      <td data-heading="c">c</td>
+      <td data-heading="d">d</td>
+      <td data-heading="e">e</td>
+      <td data-heading="f">f</td>
+      <td data-heading="g">g</td>
+      <td data-heading="h">h</td>
+      <td data-heading="i">i</td>
+      <td data-heading="j">j</td>
+      <td data-heading="k">k</td>
+      <td data-heading="l">l</td>
+      <td data-heading="m">m</td>
+      <td data-heading="n">n</td>
+      <td data-heading="o">o</td>
+      <td data-heading="p">p</td>
+      <td data-heading="q">q</td>
+    </tr>
+  </tbody>
+</table></div>
+        </div>
+      </div>
+      <div class="f">All Rights</div>
+    </div>
+  </body>
+  <script>
+  </html>
